@@ -1,6 +1,8 @@
-@tailwind base;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
+
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -16,12 +18,32 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+
+/* .navbar-text {
+  font-family: 'Montserrat';
+} */
+
+
+.text {
+  text-Shadow: 2px 2px 4px rgba(0, 0, 0, 0.2)
 }
+
+/* .text {
+  background: linear-gradient(
+    to right, #14274E, #F1F6F9 35%, #14274E);
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 4s ease-in-out infinite; 
+} */
+
+/* @keyframes gradient {
+  0% {background-position: 0% 75%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 70%;}
+} */
+
+
+
+
