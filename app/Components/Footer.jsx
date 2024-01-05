@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className='navbar-text'>
         <div className='mt-10'>
-        <footer className="footer footer-center p-4 bg-base-300 text-base-content flex justify-center h-16 py-5 bg-[#14274E]">
+        <footer className="footer footer-center p-4 bg-base-300 text-base-content flex justify-center h-16 sm:py-6 bg-[#14274E]">
             <aside>
                 <p className='text-white'>Copyright © 2024 - All right reserved by Creative TechScapes</p>
             </aside>

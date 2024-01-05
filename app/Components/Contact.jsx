@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const Contact = () => {
   return (
-    <div className='navbar-text'>
+    <div className='navbar-text' id='Contact'>
         <div >
             <section>
               <div className="flex items-center justify-center px-4 py-10 sm:px-6 sm:py-16 lg:px-8">
@@ -16,7 +16,7 @@ const Contact = () => {
                       CONTACT US
                   </div>
                   
-                  <form action="#" method="POST" className="mt-8">
+                  <form action="https://formsubmit.co/creativetechscapes2003@gmail.com" method="POST" className="mt-8">
                     <div className="space-y-5">
                       <div>
                         <label htmlFor="name" className="text-base font-medium text-gray-900">
@@ -29,6 +29,7 @@ const Contact = () => {
                             type="text"
                             placeholder="Full Name"
                             id="name"
+                            name='name'
                           ></input>
                         </div>
                       </div>
@@ -43,6 +44,7 @@ const Contact = () => {
                             type="email"
                             placeholder="Email"
                             id="email"
+                            name='email'
                           ></input>
                         </div>
                       </div>
@@ -58,6 +60,7 @@ const Contact = () => {
                             className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                             type="text"
                             placeholder="Enter subject"
+                            name='subject'
                           ></input>
                         </div>
                       </div>
@@ -73,12 +76,13 @@ const Contact = () => {
                             className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                             type="text"
                             placeholder="Enter your message"
+                            name='message'
                           ></textarea>
                         </div>
                       </div>
                       <div>
                         <button
-                          type="button"
+                          type="submit"
                           className="inline-flex w-full items-center justify-center rounded-md bg-[#14274E] px-3.5 py-2.5 font-semibold leading-7 text-white"
                         >
                           Submit <ArrowRight className="ml-2" size={16} />

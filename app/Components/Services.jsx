@@ -2,17 +2,20 @@ import React from 'react'
 import 'tailwindcss/tailwind.css';
 import '../globals.css';
 import Image from 'next/image';
-import autoprefixer from 'autoprefixer';
+
+
+
 
 const Services = () => {
   return (
-    <div className='navbar-text mt-16'>
-
+    
+    <div className='navbar-text mt-16' id='Services'>
+     
         <div className='flex justify-center text-center text-3xl text-[#14274E] m-16'>
             OUR SERVICES
         </div>
 
-        <div className='flex justify-between m-10 '>
+        <div className='lg:flex justify-between m-10 grid gap-5'>
 
         
                 <div className="relative h-[400px] w-[300px] rounded-xl shadow-xl border hover:shadow-2xl hover:border-[#14274E]">
@@ -29,7 +32,7 @@ const Services = () => {
                         We design and develop Full Stack websites. 
                     </div>
                     <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-[#14274E]">
-                    View Github &rarr;
+                    <a href={'https://github.com/CreativeTecscapes'}>View Github &rarr;</a>
                     </button>
                 </div>
                 </div>
@@ -50,7 +53,7 @@ const Services = () => {
                         We design and develop Full Stack Mobile Applications. 
                     </div>
                     <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-[#14274E]">
-                    View Github &rarr;
+                    <a href={'https://github.com/CreativeTecscapes'}>View Github &rarr;</a>
                     </button>
                 </div>
                 </div>
@@ -65,11 +68,11 @@ const Services = () => {
                 <div className="absolute inset-0 "></div>
                 <div className="absolute bottom-4 left-4 text-left">
                     <h1 className="text-2xl font-semibold text-[#14274E]">AI & ML</h1>
-                    <div className="mt-2 text-sm text-[#14274E]">
+                    <div className="mt-2 text-sm text-[#14274E] pr-1">
                         We design and develop Full Stack Machine Learning Models. 
                     </div>
                     <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-[#14274E]">
-                    View Github &rarr;
+                    <a href={'https://github.com/CreativeTecscapes'}>View Github &rarr;</a>
                     </button>
                 </div>
                 </div>
@@ -89,7 +92,7 @@ const Services = () => {
                         We design and develop all types of Blockchain applications. 
                     </div>
                     <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-[#14274E]">
-                    View Github &rarr;
+                    <a href={'https://github.com/CreativeTecscapes'}>View Github &rarr;</a>
                     </button>
                 </div>
                 </div>
@@ -98,8 +101,9 @@ const Services = () => {
 
 
         </div>
-
+       
     </div>
+    
   )
 }
 
