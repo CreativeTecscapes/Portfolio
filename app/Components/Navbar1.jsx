@@ -149,7 +149,7 @@ export default function Navbar1() {
                   <nav className="grid gap-y-4">
                     {menuItems.map((item) => (
                      
-                        <span className="text-base font-medium text-[#14274E]">
+                        <span key={item.name} className="text-base font-medium text-[#14274E]">
                           {item.subname}
                         </span>
                     

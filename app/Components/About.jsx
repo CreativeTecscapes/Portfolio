@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaLinkedinIn } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+
 
 export default function About() {
   return (
@@ -29,7 +29,7 @@ export default function About() {
                  <ol>
                     <li>Full Stack Web Developer</li>
                     <li>Full Stack Mobile App Developer</li>
-                    <li>SIH'23 Winner</li>
+                    <li>SIH 2023 Winner</li>
                  </ol>
               </div>
               <div className="mt-4 flex flex-wrap">
