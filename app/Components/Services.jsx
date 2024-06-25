@@ -19,9 +19,9 @@ const Services = () => {
 
         
                 <div className="relative h-[400px] w-[300px] rounded-xl shadow-xl border hover:shadow-2xl hover:border-[#14274E]">
-                <Image
-                    src="/wired-flat-1331-repository (1).gif"
-                    className="z-5 h-auto w-auto rounded-md object-cover flex justify-center"
+                <img
+                    src="https://webok.in/wp-content/uploads/2022/12/OBJECTS.png"
+                    className="z-5 h-auto w-auto rounded-md object-cover flex justify-center p-5"
                     height={96}
                     width={96}
                 />
@@ -40,9 +40,9 @@ const Services = () => {
 
 
                 <div className="relative h-[400px] w-[300px] rounded-xl shadow-xl border hover:shadow-2xl hover:border-[#14274E]">
-                <Image
-                    src="/wired-flat-471-ebook-reader (1).gif"
-                    className="z-5 h-auto w-auto rounded-md object-cover"
+                <img
+                    src="https://buildfire.com/wp-content/themes/buildfire/assets/images/hub-hero.webp"
+                    className="z-5 h-auto w-auto rounded-md object-cover p-5"
                     height={96}
                     width={96}
                 />
@@ -59,9 +59,9 @@ const Services = () => {
                 </div>
 
                 <div className="relative h-[400px] w-[300px] rounded-xl shadow-xl border hover:shadow-2xl hover:border-[#14274E]">
-                <Image
-                    src="/wired-flat-1639-stairs (1).gif"
-                    className="z-5 h-auto w-auto rounded-md object-cover"
+                <img
+                    src="https://www.softsages.com/_next/static/media/AIMLBannerImage.f24106df.webp"
+                    className="z-5 h-auto w-auto rounded-md object-cover p-5"
                     height={96}
                     width={96}
                 />
@@ -79,9 +79,9 @@ const Services = () => {
 
 
                 <div className="relative h-[400px] w-[300px] rounded-xl shadow-xl border hover:shadow-2xl hover:border-[#14274E]">
-                <Image
-                    src="/wired-flat-946-equity-security (1).gif"
-                    className="z-5 h-auto w-auto rounded-md object-cover"
+                <img
+                    src="https://limeacademy.tech/wp-content/uploads/2022/11/Blockchain-2.png.webp"
+                    className="z-5 h-auto w-auto rounded-md object-cover p-5"
                     height={96}
                     width={96}
                 />
