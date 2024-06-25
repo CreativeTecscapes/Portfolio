@@ -21,8 +21,6 @@ const Connect = () => {
                      <Link href={"https://github.com/CreativeTecscapes"}><BsGithub className='text-3xl text-[#14274E]'/></Link>
                      <Link href={"https://www.youtube.com/@CreativeTechscapes"}><BsYoutube className='text-3xl text-[#14274E]'/></Link>
                      <Link href={"https://www.linkedin.com/in/creative-techscapes-4a57a22a8/"}><BsLinkedin className='text-3xl text-[#14274E]'/></Link>
-                     <Link href={"/"}><BsFacebook  className='text-3xl text-[#14274E]'/></Link>
-                     <Link href={"/"}><FaXTwitter  className='text-3xl text-[#14274E]'/></Link>
         </div>
     </div>
   )
