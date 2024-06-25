@@ -21,7 +21,7 @@ const Services = () => {
                 <div className="relative h-[400px] w-[300px] rounded-xl shadow-xl border hover:shadow-2xl hover:border-[#14274E]">
                 <Image
                     src="/wired-flat-1331-repository (1).gif"
-                    className="z-5 h-auto w-auto rounded-md object-cover"
+                    className="z-5 h-auto w-auto rounded-md object-cover flex justify-center"
                     height={96}
                     width={96}
                 />

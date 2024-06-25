@@ -35,7 +35,7 @@ const Hero = () => {
       <div className="relative w-full">
       <div className="mx-auto max-w-7xl lg:px-8">
         <div className="flex flex-col justify-center px-4 py-10 lg:px-6">
-          <div className="inline-flex items-center">
+          <div className="flex items-center justify-center md:justify-start md:items-start">
             <Image src="/CTS LOGO FINAL.png" height={96} width={200}/>
           </div>
           <div className="mt-10 flex max-w-max items-center space-x-2 rounded-full border p-2">
