@@ -38,4 +38,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## Visit the website from below link
 https://portfoliocts.vercel.app
 
-<!-- Rudalph updates -->
+<!-- Rudalph updates on 28 11 2024 -->
