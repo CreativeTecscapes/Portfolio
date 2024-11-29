@@ -1,39 +1,48 @@
 'use client'
-import React from 'react'
-import { Menu, X } from 'lucide-react'
+import React, {useEffect, useRef} from 'react'
+import { Menu, X, House, Contact  } from 'lucide-react'
 import Image from 'next/image'
 import { Link } from 'react-scroll'
+import Typed from 'typed.js';
+import { Faster_One } from 'next/font/google'
+
+
+const navfont = Faster_One({ subsets: ['latin'], weight: ['400'] })
 
 const menuItems = [
   {
     name: 
-    <div className='pr-20'>
+    <div className='p-2'>
       <Link  activeClass="active" to="Hero" spy={true} smooth={true} offset={-70} duration={500}> 
-          <div className='mr-0.5 mt-1'><Image src="/system-regular-41-home.gif" width={40} height={20}/></div>
-           <div className='text-sm'>Home</div>
+           <div className='text-base cursor-pointer font-semibold relative group'>Home
+           <div className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 ease-in-out group-hover:w-full"></div>
+           <div className="absolute right-0 top-0 w-0 h-[1.5px] bg-black transition-all duration-300 ease-in-out group-hover:w-full group-hover:right-0"></div>
+           </div>
       </Link>
    </div>,
 
    subname: 
    <div className='pr-20'>
     <Link activeClass="active" to="Hero" spy={true} smooth={true} offset={-70} duration={500}>
-      <div className='text-sm'>Home</div>
+      <div className='text-sm cursor-pointer font-semibold'>Home</div>
     </Link>
    </div>
    
   },
   {
     name: 
-    <div className='pr-20'>
+    <div className='p-2'>
       <Link activeClass="active" to="Services" spy={true} smooth={true} offset={-70} duration={500}>
-      <div className='ml-6 mt-1'><Image src="/system-regular-178-work.gif" width={40} height={20}/></div>
-      <div className='text-sm'>Our Services</div>
+      <div className='text-base cursor-pointer font-semibold relative group'>Our Services
+      <div className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 ease-in-out group-hover:w-full"></div>
+      <div className="absolute right-0 top-0 w-0 h-[1.5px] bg-black transition-all duration-300 ease-in-out group-hover:w-full group-hover:right-0"></div>
+      </div>
       </Link>
     </div>,
    subname:
    <div className='pr-20'>
     <Link activeClass="active" to="Services" spy={true} smooth={true} offset={-70} duration={500}>
-      <div className='text-sm'>Our Services</div>
+      <div className='text-sm cursor-pointer font-semibold'>Our Services</div>
     </Link>
    </div>,
 
@@ -42,32 +51,36 @@ const menuItems = [
   },
   {
     name: 
-    <div className='pr-20'>
+    <div className='p-2'>
         <Link activeClass="active" to="About" spy={true} smooth={true} offset={-70} duration={500}>
-             <div className='ml-2.5'><Image src="/wired-gradient-268-avatar-man (1).gif" width={45} height={20}/></div>
-             <div className='text-sm'>About us</div>
+             <div className='text-base cursor-pointer font-semibold relative group'>About us
+             <div className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 ease-in-out group-hover:w-full"></div>
+             <div className="absolute right-0 top-0 w-0 h-[1.5px] bg-black transition-all duration-300 ease-in-out group-hover:w-full group-hover:right-0"></div>
+             </div>
         </Link>
     </div>,
     subname:
     <div className='pr-20'>
         <Link activeClass="active" to="About" spy={true} smooth={true} offset={-70} duration={500}>
-          <div className='text-sm'>About us</div>
+          <div className='text-sm cursor-pointer font-semibold'>About us</div>
         </Link>
     </div>,
     
   },
   {
     name: 
-    <div className='pr-2'>
+    <div className='p-2'>
         <Link activeClass="active" to="Contact" spy={true} smooth={true} offset={-70} duration={500}>
-            <div className='ml-4'><Image src="/system-regular-47-chat.gif" width={45} height={20}/></div>
-            <div className='text-sm'>Contact us</div>
+            <div className='text-base cursor-pointer font-semibold relative group'>Contact us
+            <div className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 ease-in-out group-hover:w-full"></div>
+            <div className="absolute right-0 top-0 w-0 h-[1.5px] bg-black transition-all duration-300 ease-in-out group-hover:w-full group-hover:right-0"></div>
+            </div>
         </Link>
     </div>,
     subname:
-    <div className='pr-2'>
+    <div className='pr-20'>
         <Link activeClass="active" to="Contact" spy={true} smooth={true} offset={-70} duration={500}>
-           <div className='text-sm'>Contact us</div>
+           <div className='text-sm cursor-pointer font-semibold'>Contact us</div>
         </Link>
     </div>,
    
@@ -82,14 +95,36 @@ export default function Navbar1() {
     setIsMenuOpen(!isMenuOpen)
   }
 
+
+  const typingRef = useRef(null);
+
+    useEffect(() => {
+        const options = {
+            strings: [
+                'CREATIVE TECHSCAPES',
+            ],
+            typeSpeed:50,
+            backSpeed: 50,
+            backDelay: 3000,
+            loop: true,
+            showCursor: true,
+        };
+
+        const typingInstance = new Typed(typingRef.current, options);
+
+        return () => {
+            typingInstance.destroy();
+        };
+    }, []);
+
   return (
-    <div className="w-full navbar-text bg-[#F1F6F9] h-20  shadow-md hover:shadow-lg sticky top-0 z-50">
+    <div className="w-full navbar-text bg-[#FFFFFF]  h-20 sticky top-0 z-50" id='Navbar1'>
       <div className="mx-auto flex max-w-9xl items-center justify-between px-4  sm:px-6 lg:px-8">
         
           
           
-        <div className='text-2xl lg:text-4xl py-5 text-[#14274E] font-bold'>
-            <a href={"/"}>Creative Techscapes</a>
+        <div className='text-xl lg:text-4xl py-5 text-[#14274E] font-bold'>
+            <a href={"/"} className={navfont.className}><span ref={typingRef} /></a>
           </div>
         
         

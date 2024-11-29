@@ -1,10 +1,14 @@
 "use client"
-import React, {useEffect, useRef} from "react";
+import React,{useEffect, useRef} from "react";
 import 'tailwindcss/tailwind.css';
 import '../globals.css';
+import { Faster_One } from 'next/font/google'
 import Typed from 'typed.js';
-import Image from "next/image";
+import { ArrowDown } from 'lucide-react';
 import { Link } from 'react-scroll'
+
+
+const navfont = Faster_One({ subsets: ['latin'], weight: ['400'] })
 
 const Hero = () => {
 
@@ -29,10 +33,27 @@ const Hero = () => {
         };
     }, []);
 
-
   return (
     <div className='navbar-text' id="Hero">
-      <div className="relative w-full">
+
+      <div className="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
+
+        <div className="absolute inset-0">
+          <img src="https://images.unsplash.com/photo-1522252234503-e356532cafd5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw2fHxjb2RlfGVufDB8MHx8fDE2OTQwOTg0MTZ8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="Background Image" className="object-cover object-center w-full h-full" />
+          <div className="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+
+        <div className="relative z-10 flex flex-col justify-center items-center h-full text-center">
+          <h1 className="text-xl lg:text-5xl font-bold leading-tight mb-4"><a href={"/"} className={navfont.className}><span ref={typingRef} /></a></h1>
+          <Link  activeClass="active" to="Navbar1" spy={true} smooth={true} offset={1} duration={1000}> 
+          <p className=" bg-yellow-400 text-gray-900 hover:bg-yellow-300  rounded-full text-lg font-semibold transition duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce"><ArrowDown size={40}/></p>
+          </Link>
+        </div>
+      </div>
+
+
+
+      {/* <div className="relative w-full">
       <div className="mx-auto max-w-7xl lg:px-8">
         <div className="flex flex-col justify-center px-4 py-10 lg:px-6">
           <div className="flex items-center justify-center md:justify-start md:items-start">
@@ -78,9 +99,9 @@ const Hero = () => {
           />
         </div>
       </div>
+    </div> */}
+
     </div>
-       
-  </div>
   )
 }
 

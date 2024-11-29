@@ -1,8 +1,8 @@
-import { Inter } from 'next/font/google'
+import { Nunito } from 'next/font/google'
 import './globals.css'
 import Navbar1 from './Components/Navbar1'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Nunito({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Creative Techscapes',
@@ -11,11 +11,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className='overflow-y-scroll no-scrollbar'>
       <body className={inter.className}>
-         <Navbar1 />
+         {/* <Navbar1 /> */}
         {children}
       </body>
     </html>
   )
 }
+
