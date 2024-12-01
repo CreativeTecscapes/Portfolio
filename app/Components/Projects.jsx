@@ -1,82 +1,109 @@
 import React from 'react'
 import { ArrowUpRight } from 'lucide-react'
+import Image from 'next/image'
+import { FaGithub } from "react-icons/fa";
+import { FaLink } from "react-icons/fa";
+import { MdComment } from "react-icons/md";
 
 const Projects = () => {
     return (
         <>
-        <div className='flex justify-center text-center text-3xl text-[#14274E] m-9 mt-20'>
-                      OUR PROJECTS
-                  </div>
-
-            <div className='mt-20 m-3 flex justify-evenly flex-wrap'>
-                <div className=' '>
-                    <div className="m-3 flex max-w-2xl flex-col items-center rounded-md border md:flex-row hover:shadow-2xl">
-                        <div className="h-full w-full md:h-[200px] md:w-[300px] flex-shrink-0">
-                            <img
-                                src="https://masterbundles.com/wp-content/uploads/2023/07/work-life-balance_madterbundles-3-5.jpg"
-                                alt="Laptop"
-                                className="p-2 h-full w-full rounded-md object-cover"
-                            />
-                        </div>
-                        <div>
-                            <div className="p-4">
-                                <h1 className="inline-flex items-center text-lg font-semibold">
-                                    Life Balance 360 <a href="https://life-balance-360.vercel.app/"><ArrowUpRight className="ml-2 h-4 w-4" /></a>
-                                </h1>
-                                <p className="mt-3 text-sm text-gray-600">
-                                    AI powered web application that interacts with live health data of users and generate alerts and provide recommndations to live healthy life.
-                                </p>
-                                <div className="mt-7">
-                                    <span className="mb-2 mr-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-[10px] font-semibold text-gray-900">
-                                        #Healthy Life
-                                    </span>
-                                    <span className="mb-2 mr-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-[10px] font-semibold text-gray-900">
-                                        #Generative AI
-                                    </span>
-                                    <span className="mb-2 mr-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-[10px] font-semibold text-gray-900">
-                                        #Web application
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div>
-                    <div className="m-3 flex max-w-2xl flex-col items-center rounded-md border md:flex-row hover:shadow-2xl">
-                        <div className="h-full w-full md:h-[200px] md:w-[300px] flex-shrink-0">
-                            <img
-                                src="https://etimg.etb2bimg.com/photo/105395878.cms"
-                                alt="Laptop"
-                                className="p-2 h-full w-full rounded-md object-cover"
-                            />
-                        </div>
-                        <div>
-                            <div className="p-4">
-                                <h1 className="inline-flex items-center text-lg font-semibold">
-                                    Mental Health <a href="https://mental-health-django.vercel.app/"><ArrowUpRight className="ml-2 h-4 w-4" /></a>
-                                </h1>
-                                <p className="mt-3 text-sm text-gray-600">
-                                    Machine Learning based web application that helps user to know about their mental health condition.
-                                </p>
-                                <div className="mt-7">
-                                    <span className="mb-2 mr-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-[10px] font-semibold text-gray-900">
-                                        #Mental Health
-                                    </span>
-                                    <span className="mb-2 mr-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-[10px] font-semibold text-gray-900">
-                                        #Machine Learning
-                                    </span>
-                                    <span className="mb-2 mr-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-[10px] font-semibold text-gray-900">
-                                        #Web app
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div className='flex justify-center text-center text-3xl text-[#14274E]  mt-40' id='Projects'>
+                📂 Explore Our Proud Creations 🌍
             </div>
+
+            <section id="Projects"
+                class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-16 mb-5">
+
+{/* MediSense */}
+                <div class="w-72 lg:w-80 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl border border-black">
+
+                    <Image src="/Medisense-Image.jpg"
+                        className="rounded-xl p-2"
+                        height={600}
+                        width={700}
+                    />
+                    <div class="px-4 py-3 w-72 ">
+                        <p class="text-lg font-bold text-black truncate block uppercase">MediSense</p>
+                        <span class="text-gray-400 mr-3 text-base ">Enlightening Health, Empowering Lives.</span>
+                    </div>
+
+                    <div className='flex justify-evenly align-middle items-center p-3 text-[#14274E] text-xl'>
+                        <a href="https://github.com/Rudalph/MediSense"><FaGithub /></a>
+                        <a href="https://medi-sense.vercel.app/"><FaLink /></a>
+                        <MdComment />
+                    </div>
+
+                </div>
+
+
+{/* Life Balance 360 */}
+                <div class="w-72 lg:w-80 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl border border-black">
+
+                    <Image src="/LB-360.jpg"
+                        className="rounded-xl p-2"
+                        height={600}
+                        width={700}
+                    />
+                    <div class="px-4 py-3 w-72">
+                        <p class="text-lg font-bold text-black truncate block uppercase">Life Balance 360</p>
+                        <span class="text-gray-400 mr-3 text-base">Advance Healthcare Management System.</span>
+                    </div>
+
+                    <div className='flex justify-evenly align-middle items-center p-3 text-[#14274E] text-xl'>
+                        <a href="https://github.com/Rudalph/Life-Balance-360"><FaGithub /></a>
+                        <a href="https://life-balance-360.vercel.app/"><FaLink /></a>
+                        <MdComment />
+                    </div>
+
+                </div>
+
+{/* Jivsanklp */}
+                <div class="w-72 lg:w-80 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl border border-black">
+
+                    <Image src="/jivsankalp.jpg"
+                        className="rounded-xl p-2"
+                        height={600}
+                        width={700}
+                    />
+                    <div class="px-4 py-3 w-72 mt-2">
+                        <p class="text-lg font-bold text-black truncate block uppercase">Jivsankalp</p>
+                        <span class="text-gray-400 mr-3 text-base">Conservation of endangered species using AI/ML</span>
+                    </div>
+
+                    <div className='flex justify-evenly align-middle items-center p-3 text-[#14274E] text-xl'>
+                        <a href="https://github.com/RehanAlmeida/Jivsankalp"><FaGithub /></a>
+                        <a href="https://github.com/RehanAlmeida/Jivsankalp"><FaLink /></a>
+                        <MdComment />
+                    </div>
+
+                </div>
+
+
+                <div class="w-72 lg:w-80 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl border border-black">
+
+                    <Image src="/Zenith-AI.jpg"
+                        className="rounded-xl p-2"
+                        height={600}
+                        width={700}
+                    />
+                    <div class="px-4 py-3 w-72 ">
+                        <p class="text-lg font-bold text-black truncate block uppercase">Zenith AI</p>
+                        <span class="text-gray-400 mr-3 text-base ">Elevating banking excellence with peak performance</span>
+                    </div>
+
+                    <div className='flex justify-evenly align-middle items-center p-3 text-[#14274E] text-xl'>
+                        <a href="https://github.com/Rudalph/Bank-Of-Baroda-GenAI-Hackathon"><FaGithub /></a>
+                        <a href="https://zenith-ai-bob.vercel.app/"><FaLink /></a>
+                        <MdComment />
+                    </div>
+
+                </div>
+
+                
+
+
+            </section>
         </>
     )
 }

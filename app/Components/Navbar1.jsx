@@ -13,7 +13,7 @@ const menuItems = [
   {
     name: 
     <div className='p-2'>
-      <Link  activeClass="active" to="Hero" spy={true} smooth={true} offset={-70} duration={500}> 
+      <Link  activeClass="active" to="Hero" spy={true} smooth={true} offset={-70} duration={1000}> 
            <div className='text-base cursor-pointer font-semibold relative group'>Home
            <div className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 ease-in-out group-hover:w-full"></div>
            <div className="absolute right-0 top-0 w-0 h-[1.5px] bg-black transition-all duration-300 ease-in-out group-hover:w-full group-hover:right-0"></div>
@@ -32,7 +32,7 @@ const menuItems = [
   {
     name: 
     <div className='p-2'>
-      <Link activeClass="active" to="Services" spy={true} smooth={true} offset={-70} duration={500}>
+      <Link activeClass="active" to="Services" spy={true} smooth={true} offset={-150} duration={1000}>
       <div className='text-base cursor-pointer font-semibold relative group'>Our Services
       <div className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 ease-in-out group-hover:w-full"></div>
       <div className="absolute right-0 top-0 w-0 h-[1.5px] bg-black transition-all duration-300 ease-in-out group-hover:w-full group-hover:right-0"></div>
@@ -52,8 +52,8 @@ const menuItems = [
   {
     name: 
     <div className='p-2'>
-        <Link activeClass="active" to="About" spy={true} smooth={true} offset={-70} duration={500}>
-             <div className='text-base cursor-pointer font-semibold relative group'>About us
+        <Link activeClass="active" to="About" spy={true} smooth={true} offset={-150} duration={1000}>
+             <div className='text-base cursor-pointer font-semibold relative group'>Team
              <div className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 ease-in-out group-hover:w-full"></div>
              <div className="absolute right-0 top-0 w-0 h-[1.5px] bg-black transition-all duration-300 ease-in-out group-hover:w-full group-hover:right-0"></div>
              </div>
@@ -62,7 +62,25 @@ const menuItems = [
     subname:
     <div className='pr-20'>
         <Link activeClass="active" to="About" spy={true} smooth={true} offset={-70} duration={500}>
-          <div className='text-sm cursor-pointer font-semibold'>About us</div>
+          <div className='text-sm cursor-pointer font-semibold'>Team</div>
+        </Link>
+    </div>,
+    
+  },
+  {
+    name: 
+    <div className='p-2'>
+        <Link activeClass="active" to="Projects" spy={true} smooth={true} offset={-150} duration={1000}>
+             <div className='text-base cursor-pointer font-semibold relative group'>Portfolio
+             <div className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 ease-in-out group-hover:w-full"></div>
+             <div className="absolute right-0 top-0 w-0 h-[1.5px] bg-black transition-all duration-300 ease-in-out group-hover:w-full group-hover:right-0"></div>
+             </div>
+        </Link>
+    </div>,
+    subname:
+    <div className='pr-20'>
+        <Link activeClass="active" to="Projects" spy={true} smooth={true} offset={-70} duration={500}>
+          <div className='text-sm cursor-pointer font-semibold'>Portfolio</div>
         </Link>
     </div>,
     

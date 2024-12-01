@@ -4,32 +4,30 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 export default function About() {
   return (
-    <div className="mx-auto max-w-7xl px-2 lg:px-0 text-[#14274E]" id='About'>
+    <div className="mx-auto max-w-7xl px-2 lg:px-0 text-[#14274E] mt-40" id='About'>
       <div className="mx-auto max-w-3xl md:text-center">
                   <div className='flex justify-center text-center text-3xl text-[#14274E] mt-16 py-5'>
-                      ABOUT US
+                       We Are Team Creative TechScapes!👩‍💻
                   </div>
-        <p className="mx-auto mt-4 max-w-2xl text-[#394867] md:text-xl py-2 ">
-            We are Team Creative Techscapes. We are here to convert your vision in to reality
-            with our technological expertise.
+        <p className="mx-auto mt-4 max-w-2xl text-[#394867] py-2 text-lg">
+            Bringing your vision to life with innovation, creativity, and cutting-edge technology. Let's turn your dreams into digital reality!
         </p>
       </div>
       <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:flex justify-evenly">
         
-          <div className="mx-auto w-[300px] rounded-md border shadow-md hover:shadow-2xl">
+          <div className="mx-auto w-[300px] rounded-md border shadow-md hover:shadow-2xl ">
             <img
               src="/Rudalph_CTS_Image.jpeg"
               alt="Laptop"
               className="h-[300px] w-full rounded-t-md object-cover"
             />
             <div className="p-4">
-              <h1 className="text-lg font-semibold">Rudalph Gonsalves</h1>
+              <h1 className="text-lg font-semibold">Mr. Rudalph Gonsalves</h1>
               <h6 className="mt-3 font-medium">Founder and CEO, Creative Techscapes</h6>
               <div className="mt-3 text-sm">
                  <ol>
-                    <li>Full Stack Web Developer</li>
-                    <li>Full Stack Mobile App Developer</li>
-                    <li>SIH 2023 Winner</li>
+                    <li>🌐 Full Stack Developer</li>
+                    <li>👩‍💻 Computer Engineer</li>
                  </ol>
               </div>
               <div className="mt-4 flex flex-wrap">
@@ -54,13 +52,12 @@ export default function About() {
               className="h-[300px] w-full rounded-t-md object-cover"
             />
             <div className="p-4">
-              <h1 className="text-lg font-semibold">Shruti Patil</h1>
-              <h6 className="mt-3 font-medium">Co-founder of Creative Techscapes</h6>
+              <h1 className="text-lg font-semibold">Ms. Shruti Patil</h1>
+              <h6 className="mt-3 font-medium">Co-founder and CTO, Creative Techscapes</h6>
               <div className="mt-3 text-sm">
                  <ol>
-                    <li>Full Stack Web Developer</li>
-                    <li>Android App Developer</li>
-                    <li>Machine Learning Developer</li>
+                    <li>🌐 Full Stack Developer</li>
+                    <li>👩‍💻 Computer Engineer</li>
                  </ol>
               </div>
               <div className="mt-4 flex flex-wrap">
