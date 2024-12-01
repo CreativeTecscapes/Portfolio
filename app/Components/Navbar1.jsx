@@ -88,7 +88,7 @@ const menuItems = [
   {
     name: 
     <div className='p-2'>
-        <Link activeClass="active" to="Contact" spy={true} smooth={true} offset={-70} duration={500}>
+        <Link activeClass="active" to="Contact" spy={true} smooth={true} offset={-30} duration={1000}>
             <div className='text-base cursor-pointer font-semibold relative group'>Contact us
             <div className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 ease-in-out group-hover:w-full"></div>
             <div className="absolute right-0 top-0 w-0 h-[1.5px] bg-black transition-all duration-300 ease-in-out group-hover:w-full group-hover:right-0"></div>

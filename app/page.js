@@ -7,6 +7,7 @@ import Footer from "./Components/Footer"
 import Projects from "./Components/Projects"
 import Navbar1 from "./Components/Navbar1"
 import Intro from "./Components/Intro"
+import Additional from "./Components/Additional"
 
 export default function Home() {
   return (
@@ -14,11 +15,12 @@ export default function Home() {
        <Hero />
        <Navbar1 />
        <Intro />
+       <Additional />
        <Services />
        <About />
        <Projects />
        <Contact />
-       <Connect />
+       {/* <Connect /> */}
        <Footer />
     </div>
   )

@@ -9,9 +9,9 @@ import Image from 'next/image';
 const Services = () => {
   return (
     
-    <div className='navbar-text mt-40' id='Services'>
+    <div className='navbar-text' id='Services'>
      
-        <div className='flex justify-center text-center text-3xl text-[#14274E] m-16'>
+        <div className='flex justify-center text-center text-3xl text-[#14274E] mt-0 m-16'>
            What We Offer 🚀
         </div>
 
