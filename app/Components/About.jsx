@@ -10,7 +10,7 @@ export default function About() {
                        We Are Team Creative TechScapes!👩‍💻
                   </div>
         <p className="mx-auto mt-4 max-w-2xl text-[#394867] py-2 text-lg">
-            Bringing your vision to life with innovation, creativity, and cutting-edge technology. Let's turn your dreams into digital reality!
+            Bringing your vision to life with innovation, creativity, and cutting-edge technology. Let&apos;s turn your dreams into digital reality!
         </p>
       </div>
       <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:flex justify-evenly">
